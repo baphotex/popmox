@@ -10,3 +10,6 @@ def create_app():
   
     return app
 
+@app.before_first_request
+def create_db():
+    SQLModel.metadata.create_all(app.engine)
