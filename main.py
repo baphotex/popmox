@@ -2,8 +2,8 @@ from flask import Flask, jsonify, request, render_template, send_from_directory
 import os
 import app.py as APP
 
-app = APP.create_app() 
-#app = Flask(__name__,  static_folder='static')
+#app = APP.create_app() 
+app = Flask(__name__,  static_folder='static')
 
 @app.route('/', methods =["GET", "POST"])
 def index():
