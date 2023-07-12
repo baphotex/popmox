@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>journal theme</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+background-image: url('https://i.imgur.com/jdEamQr.png');
+background-color: #F8EEDA;
+margin: 7%;
+font-family: 'Karla', sans-serif;
+font-size: 16px;
+color: #967e68;
+}
+
+.sidebg{
+background-image: url('https://i.imgur.com/WWd5ZJ1.png');
+background-repeat: repeat-y;
+background-position: top right;
+width: 200px;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+.side{
+background-color: #fffefc;
+width: 176px;
+height: 100%;
+padding: 1rem 0.5rem 1rem 1rem;
+text-align: justify;
+font-size: 15px;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.avatar{
+width: 100%;
+opacity: 0.9;
+}
+
+.desc{
+padding: 0.5rem;
+}
+
+.sideheaders{
+font-family: 'Love Ya Like A Sister', serif;
+font-weight: normal;
+font-size: 28px;
+}
+
+.side ul{
+padding-left: 2.5rem;
+}
+
+.side li{
+list-style-image: url('https://i.imgur.com/iqIEW3A.gif');
+font-size: 16px;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+margin-left: 200px;
+}
+
+.headerwrapper{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.title{
+font-family: 'Love Ya Like A Sister', serif;
+font-weight: normal;
+color: #8f7c66;
+font-size: 46px;
+align-self: end;
+margin-left: -1rem;
+}
+
+.headerimg{
+width: 285px;
+align-self: end;
+margin-right: -1rem;
+margin-bottom: -1rem;
+position: relative;
+z-index: 1;
+}
+
+.boxgap{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.box{
+display: flex;
+flex-direction: row;
+background-color: #fffefc;
+border: 3px solid #967e68;
+}
+
+.left{
+border-right: 3px solid #967e68;
+padding: 0.7rem;
+text-align: center;
+}
+
+.icon{
+border: 2px solid #967E68;
+}
+
+.right{
+padding: 1rem;
+}
+
+a{
+color: #76AFC2;
+text-decoration: none;
+}
+
+a:visited{
+color: #76AFC2;
+}
+
+a:hover{
+font-weight: bold;
+}
+
+a:active{
+font-style: italic;
+font-weight: normal;
+}
+
+
+
+::-webkit-scrollbar{
+width: 8px; 
+}
+    
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+background-color: #967e68;
+}
+
+#credit{
+font-size: 12px;
+position: fixed;
+bottom: 0;
+right: 0;
+}
+
+@media(max-width:760px){
+body{
+margin: 0;
+padding: 1rem;
+}
+.sidebg{
+background-image: none;
+position: relative;
+top: 0;
+margin-bottom: 1rem;
+width: 100%;
+height: auto;
+}
+.side{
+height: auto;
+width: 100%;
+text-align: center;
+padding: 1rem;
+}
+.desc{
+font-size: 16px;
+}
+.side ul{
+padding: 0;
+}
+.side li{
+display: inline;
+margin-left: 4px;
+}
+.avatar{
+width: 50%;
+margin: 0 auto;
+}
+.container{
+margin: 0;
+}
+.headerimg{
+width: 180px;
+}
+.title{
+font-size: 36px;
+margin: 0;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebg">
+<div class="side">
+
+<!-- SIDEBAR AVATAR -->
+<img class="avatar" src="https://64.media.tumblr.com/0882da2752698f3af95bb0430cb9a3ed/tumblr_pk7notiPBU1rnxhlq_540.gif">
+
+<!-- SIDEBAR DESCRIPTION -->
+<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet ex quis nisi auctor mollis.</p>
+
+<!-- SIDEBAR NAV -->
+<h2 class="sideheaders">Navigate</h2>
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Gallery</a></li>
+<li><a href="">Blog</a></li>
+<li><a href="">Resources</a></li>
+<li><a href="">Links</a></li>
+<li><a href="">Other</a></li>
+</ul>
+
+</div>
+</div>
+
+<div class="container">
+<div class="headerwrapper">
+
+<!-- TITLE AND HEADER IMAGE -->
+<h1 class="title">Title Here</h1>
+<img class="headerimg" src="https://i.imgur.com/IwhbkAN.png" id="header">
+</div>
+
+<div class="boxgap">
+
+<!-- POST START -->
+<div class="box">
+
+<!-- POST ICON AND DATE  -->
+<div class="left">
+<img class="icon" src="https://i.imgur.com/ciYUuHm.jpg">
+<p>06/18/22</p>
+</div>
+
+<!-- POST TEXT -->
+<div class="right">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet ex quis nisi auctor mollis. Phasellus nec nunc sit amet purus mattis sodales. Morbi lectus nunc, tincidunt dapibus sem vitae, porttitor ornare leo. Fusce elit augue, rhoncus sed finibus non, faucibus id tellus. Pellentesque nec justo ex. Praesent nec velit at mauris ultrices bibendum. Fusce fringilla, magna eu bibendum ornare, lacus sapien ornare est, egestas semper urna orci lobortis massa. Maecenas sed ultrices ex, sed cursus orci. Donec orci massa, rhoncus vitae elit sed, tempor gravida nunc. Aenean id iaculis risus, ut interdum mauris. Nunc ac rutrum justo. Praesent eleifend, nunc ac cursus vestibulum, odio nulla fringilla nisl, eu laoreet quam orci eget libero. Maecenas sollicitudin felis nunc, dignissim iaculis est iaculis ut.</p>
+</div>
+
+</div>
+<!-- POST END -->
+
+<!-- POST START -->
+<div class="box">
+
+<!-- POST ICON AND DATE -->
+<div class="left">
+<img class="icon" src="https://i.imgur.com/ciYUuHm.jpg">
+<p>06/18/22</p>
+</div>
+
+<!-- POST TEXT -->
+<div class="right">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet ex quis nisi auctor mollis. Phasellus nec nunc sit amet purus mattis sodales. Morbi lectus nunc, tincidunt dapibus sem vitae, porttitor ornare leo. Fusce elit augue, rhoncus sed finibus non, faucibus id tellus. Pellentesque nec justo ex. Praesent nec velit at mauris ultrices bibendum. Fusce fringilla, magna eu bibendum ornare, lacus sapien ornare est, egestas semper urna orci lobortis massa. Maecenas sed ultrices ex, sed cursus orci. Donec orci massa, rhoncus vitae elit sed, tempor gravida nunc. Aenean id iaculis risus, ut interdum mauris. Nunc ac rutrum justo. Praesent eleifend, nunc ac cursus vestibulum, odio nulla fringilla nisl, eu laoreet quam orci eget libero. Maecenas sollicitudin felis nunc, dignissim iaculis est iaculis ut.</p>
+</div>
+
+</div>
+<!-- POST END -->
+
+
+<!-- POST START -->
+<div class="box">
+
+<!-- POST ICON AND DATE -->
+<div class="left">
+<img class="icon" src="https://i.imgur.com/ciYUuHm.jpg">
+<p>06/18/22</p>
+</div>
+
+<!-- POST TEXT -->
+<div class="right">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet ex quis nisi auctor mollis. Phasellus nec nunc sit amet purus mattis sodales. Morbi lectus nunc, tincidunt dapibus sem vitae, porttitor ornare leo. Fusce elit augue, rhoncus sed finibus non, faucibus id tellus. Pellentesque nec justo ex. Praesent nec velit at mauris ultrices bibendum. Fusce fringilla, magna eu bibendum ornare, lacus sapien ornare est, egestas semper urna orci lobortis massa. Maecenas sed ultrices ex, sed cursus orci. Donec orci massa, rhoncus vitae elit sed, tempor gravida nunc. Aenean id iaculis risus, ut interdum mauris. Nunc ac rutrum justo. Praesent eleifend, nunc ac cursus vestibulum, odio nulla fringilla nisl, eu laoreet quam orci eget libero. Maecenas sollicitudin felis nunc, dignissim iaculis est iaculis ut.</p>
+</div>
+
+</div>
+<!-- POST END -->
+
+</div>
+
+</div>
+
+<div id="credit"><a href="https://repth.neocities.org/index.html">©repth</a></div>
+
+</body>
+
+</html>
